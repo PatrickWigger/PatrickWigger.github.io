@@ -42,7 +42,7 @@
     <script>
         const authorizeSpotify = () => {
             const clientId = '6418aa09b1b74f02a249878373522c97';
-            const redirectUri = 'https://PatrickWigger.github.io';
+            const redirectUri = 'http://localhost:3000/auth/callback';
             const scopes = ['user-top-read'];
             const url = `https://accounts.spotify.com/authorize?response_type=token&client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scopes.join(' '))}`;
             window.location = url;
